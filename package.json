@@ -1,0 +1,22 @@
+{
+  "name": "elsewhere-afterlight",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "wasm": "wasm-pack build wasm --target web --out-dir ../src/wasm",
+    "wasmrelease": "wasm-pack build --release wasm --target web --out-dir ../src/wasm",
+    "watch:wasm": "cd wasm && cargo watch -s \"npm run wasm\"",
+    "watch:vite": "vite",
+    "dev": "concurrently \"npm:watch:vite\" \"npm:watch:wasm\"",
+    "build": "npm run wasmrelease && tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@webgpu/types": "^0.1.72",
+    "concurrently": "^10.0.5",
+    "typescript": "~7.0.2",
+    "vite": "^8.2.2",
+    "vite-plugin-glsl": "^1.6.1"
+  }
+}

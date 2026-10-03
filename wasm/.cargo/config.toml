@@ -1,0 +1,10 @@
+[target.wasm32-unknown-unknown]
+linker = "rust-lld.exe"
+rustdocflags = ["-Clinker=rust-lld.exe"]
+rustflags = [
+  "-Zshare-generics=y",
+  "-Zthreads=0",
+]
+
+[build]
+target = "wasm32-unknown-unknown"

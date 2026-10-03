@@ -1,0 +1,29 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#game {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+#ui_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu_buttons {
+    margin: 0px;
+}
