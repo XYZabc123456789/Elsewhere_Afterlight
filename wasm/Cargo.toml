@@ -7,7 +7,11 @@ edition = "2024"
 crate-type = ["cdylib"]
 
 [dependencies]
+js-sys = "0.3.106"
+rayon = "1.12.0"
 wasm-bindgen = "0.2.129"
+wasm-bindgen-rayon = { version = "1.3.0", features = ["nightly"] }
+web-sys = { version = "0.3.106", features = ["console"] }
 
 [profile.dev]
 opt-level = 1

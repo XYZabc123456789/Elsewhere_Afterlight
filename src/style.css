@@ -6,7 +6,7 @@ html, body {
     background-color: black;
 }
 
-#game {
+#game_container {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -22,8 +22,4 @@ html, body {
     height: 100%;
     width: 100%;
     z-index: 1;
-}
-
-.menu_buttons {
-    margin: 0px;
 }
